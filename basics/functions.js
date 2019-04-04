@@ -14,9 +14,8 @@ console.log(avg);
 
 function average(n1, n2, n3, n4, n5)
 {
-    var total = n1 + n2 + n3 + n4 + n5;
-    var a = total / 5;
-    console.log("The average of", n1, n2, n3, n4, n5, "is", a);
+    var avg = (n1 + n2 + n3 + n4 + n5) / 5;
+    console.log("The average of", n1, n2, n3, n4, n5, "is", avg);
 }
 
 // Now "call" or "invoke" the function you just defined

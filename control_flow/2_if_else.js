@@ -2,13 +2,11 @@
 
 var n1 = 20, n2 = 40;
 
-if (n1 > n2) 
-{
+if (n1 > n2) {
     console.log("n1 is greater");
 }
-else
-{
+else {
     console.log("n2 is greater");
 }
 
-
+console.log("program is ending");

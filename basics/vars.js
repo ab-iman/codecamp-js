@@ -12,8 +12,8 @@ console.log(person3);
 console.log(person1 + person2);
 
 // Equivalent way of doing ^^^
-// var joined = person1 + person2;
-// console.log(joined);
+var joined = person1 + person2;
+console.log(joined);
 
 // What if I use + operator on an undefined variable?
 console.log(person1 + person3);
@@ -22,8 +22,10 @@ console.log(person1 + person3);
 var a = 10;
 var b = 20;
 var c;
+var d = null;
 
 console.log(a, b, c);
 console.log(a+b);
 console.log(a+c);
+console.log(d);
 
