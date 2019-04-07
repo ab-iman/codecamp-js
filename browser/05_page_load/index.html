@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        function showMessage() {
+            var div = document.getElementById("message");
+            // alert(div.innerText);
+            div.innerText = "bla bla bla: " + new Date();
+            div.style.backgroundColor = "green";
+            div.style.opacity = "0.5";
+            div.style.fontSize = "24px";
+        }
+
+        function guddu_ready() {
+            var btn = document.getElementById("btn");
+            btn.addEventListener("click", showMessage);
+        }
+
+        window.addEventListener("DOMContentLoaded", guddu_ready);
+
+
+    </script>
+    <style>
+        #message {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Page load</h1>
+    <button id="btn">Click me meow!</button>
+    <div id="message">No messages</div>
+</body>
+</html>

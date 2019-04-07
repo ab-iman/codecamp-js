@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Callbacks</title>
+</head>
+<body>
+    <h1>Callback</h1>
+    <button id="btn">Click Me!</button>
+    <script>
+
+        var showMessage = function showMessage() {
+            console.log("Button was clicked");
+        };
+
+        var my_button = document.getElementById("btn");
+        my_button.addEventListener("click", showMessage);
+    
+    </script>
+</body>
+</html>
